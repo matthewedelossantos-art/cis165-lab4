@@ -82,5 +82,27 @@ Testing
 | Ocean — assigned rate | 1.5 mm/year | 5 years = 7.5 mm; 7 years = 10.5 mm; 10 years = 15 mm | 5 years = 7.5 mm; 7 years = 10.5 mm; 10 years = 15 mm | Match; no correction needed. |
 | Ocean — changed rate | 2.25 mm/year | 5 years = 11.25 mm; 7 years = 15.75 mm; 10 years = 22.5 mm | 5 years = 11.25 mm; 7 years = 15.75 mm; 10 years = 22.5 mm | Match; no correction needed. |
 
+Explain your code
 
+Why should the five values and the average use the double data type?
+
+The five values should use the double data type because the double uses has decimals as opposed to integer type. Having the values as doubles gives a more accurate result.
+
+The five values add up to 154, so sum becomes 154. The program then divides sum by 5. The result is 30.8, which is stored in average.
+
+Why divide the completed sum?
+
+An average is the total of all values divided by how many values there are. Dividing only the final value would ignore the other four values and would not calculate the average of all five.
+
+How do the ocean-level calculations work?
+
+The program multiplies the annual rate, 1.5 millimeters per year, by each number of years. This gives 7.5 mm after 5 years, 10.5 mm after 7 years, and 15 mm after 10 years.
+
+Why make the annual rate a named constant?
+
+The rate is a fixed assumption for this assignment, so a named constant communicates that it should not change during the program. It also makes the calculation easier to read and makes the rate easy to find if the assumption needs to be updated.
+
+Why store calculations before using cout?
+
+Storing each calculation in a variable makes the steps clear and easier to check, test, and debug. It also follows the assignment's requirement to separate calculations from output.
 
